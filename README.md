@@ -1,3 +1,3 @@
 # Heroku_crud
 
-## Respositorio para manejar crud en heroku
+## Respositorio para manejar crud mysql en heroku
