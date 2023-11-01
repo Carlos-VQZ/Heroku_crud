@@ -1,6 +1,7 @@
 import fastapi
 import sqlite3
 from pydantic import BaseModel
+from fastapi.middleware.cors import CORSMiddleware
 
 # Crea la base de datos
 conn = sqlite3.connect("contactos.db")
