@@ -11,6 +11,22 @@ class Contacto(BaseModel):
     email : str
     nombre : str
     telefono : str
+    
+# Origins
+origins = [
+    "http://localhost:8080",
+    "https://herokufrontend23-2e5ad8e49cc5.herokuapp.com"
+]
+
+# Cors
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 
 # Rutas para las operaciones CRUD
 
