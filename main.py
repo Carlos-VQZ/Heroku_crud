@@ -86,6 +86,3 @@ async def eliminar_contacto(email: str):
     c.execute('DELETE FROM contactos WHERE email = ?', (email,))
     conn.commit()
     return {"mensaje":"Contacto eliminado"}
-
-  
-  git config --global user.name "Carlos-VQZ"
