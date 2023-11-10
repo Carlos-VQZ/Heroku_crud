@@ -16,6 +16,7 @@ class Contacto(BaseModel):
 # Origins
 origins = [
     "http://localhost:8080",
+    "http://127.0.0.1:5000",
     "https://herokufrontend23-2e5ad8e49cc5.herokuapp.com"
 ]
 
@@ -85,3 +86,6 @@ async def eliminar_contacto(email: str):
     c.execute('DELETE FROM contactos WHERE email = ?', (email,))
     conn.commit()
     return {"mensaje":"Contacto eliminado"}
+
+  
+  git config --global user.name "Carlos-VQZ"
